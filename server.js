@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const logger = require('./src/lib/utils/logger');
 
 (async () => {
-  await mongoose.connect('mongodb://localhost:27017/restDesign', { useNewUrlParser: true });
+  await mongoose.connect('mongodb://db:27017/restDesign', { useNewUrlParser: true });
   console.log('Connected to mongoDB');
   await app.listen(3000);
   console.log('listening port 3000');
